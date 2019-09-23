@@ -4,10 +4,17 @@
 <meta charset="utf-8">
 <title>HTML 5 Doc</title>
 	<style>
-		body,html {padding: 0; margin: 0}
+		body,html {
+			padding: 0; margin: 0
+		}
+
 		header h1 { text-align:center;
 		font-family: arial, helvetica;
 		font-size: 30px;
+		}
+
+		h1,h2 {
+			font-style: italic;
 		}
 		header {background-color: #878787;
 		color: #fff; padding: 20px 40px; width: 100%; box-sizing: border-box;}
@@ -38,25 +45,26 @@
 			background-color: #AD3DCB;
 		}
 
-		article, section {
+		/*-- article, section {
 			margin: 10px 25px;
-		}
+		} */
+
 
 	</style>
 </head>
 <body>
 
 
-	<header>
+	<header style="margin-bottom: 10px;">
 	<h1>Header</h1>
 	</header>
 
 	<nav>
 	<ul>
-	<li class="nav"><a href="#">Home</a></li>
-	<li class="nav"><a href="#">Our Team</a></li>
-	<li class="nav"><a href="#">Projects</a></li>
-	<li class="nav"><a href="#">Contact</a></li>
+	<li class="nav"><a href="#hone">Home</a></li>
+	<li class="nav"><a href="#ourteam">Our Team</a></li>
+	<li class="nav"><a href="#projects">Projects</a></li>
+	<li class="nav"><a href="#contact">Contact</a></li>
 	<li id="search-bar">
 	<form>
 	<input type='text' name='search' placeholder="Search querry">
@@ -68,12 +76,11 @@
 
 	<aside class="first-aside">
 		<h1 style="font-size: 50px;">Related</h1>
-		<li><a href="http://www.google.com">this is the first link</a>  </li>
-		<li><a href="http://www.google.com">this is the first link</a>  </li>
-		<li><a href="http://www.google.com">this is the first link</a>  </li>
-		<li><a href="http://www.google.com">this is the first link</a>  </li>
+		<li><a href="#first">this is the first link</a>  </li>
+		<li><a href="#second">this is the first link</a>  </li>
+		<li><a href="#third">this is the first link</a>  </li>
+		<li><a href="#fourth">this is the first link</a>  </li>
 	</aside>
-
 
 	<article class="first-article" style="margin: 10px 25px;">
 		<h1 style="text-align: center; font-size: 50px;">Article heading</h1>
@@ -86,9 +93,11 @@
 	</section>
 
 	<section>
-	<h2>another subsection</h2>
+	<h2>Another subsection</h2>
 	<p>Nunc est leo, ullamcorper ac enim feugiat, vulputate sodales mauris. Quisque scelerisque convallis ante eu pharetra. Sed in aliquet ante, egestas varius dui. Suspendisse interdum, augue eget congue tincidunt, magna mi faucibus ex, at dapibus odio est et libero. Suspendisse non nulla tempor, dapibus nulla in, convallis nisl. Quisque non urna vitae lectus varius tempor. In lobortis tristique orci non ultrices. Duis id nulla placerat, gravida eros in, convallis justo. Morbi ac sagittis ligula, a scelerisque elit. Suspendisse commodo eros enim, volutpat euismod lectus cursus ut. Nam eu neque ipsum. Morbi vehicula ultrices pharetra. In maximus nunc justo, ut eleifend lacus interdum ut. Suspendisse metus orci, tempus et sem eu, sollicitudin malesuada erat.</p>
 	</section>
+
+
 
 
 </body>
